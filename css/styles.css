@@ -465,10 +465,7 @@ address {
 .footer-container {
   display: flex;
   align-items: baseline;
-}
-
-.footer-left-side {
-  margin-right: 70px;
+  justify-content: space-between;
 }
 
 .footer-logo {
@@ -501,10 +498,6 @@ address {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
-}
-
-.footer-right-side {
-  margin-right: 93px;
 }
 
 .footer-join-in {
@@ -701,13 +694,12 @@ address {
 .order-service-group {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.order-service-label {
-  margin-bottom: 10px;
-}
 .order-service-label:last-child {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .order-servise-name {
@@ -715,7 +707,7 @@ address {
   margin-bottom: 4px;
 
   font-size: 12px;
-  line-height: 1.14;
+  line-height: 1.16;
   letter-spacing: 0.01em;
 }
 
@@ -732,13 +724,11 @@ address {
   transition: border-color var(--transition-duration);
 }
 
-.order-service-input:focus,
-.order-service-input:hover {
+.order-service-input:focus {
   border: 1px solid var(--accent-color);
 }
 
-.order-service-input:focus + .order-service-svg,
-.order-service-input:hover + .order-service-svg {
+.order-service-input:focus + .order-service-svg {
   fill: var(--accent-color);
 }
 
@@ -754,6 +744,7 @@ address {
 }
 
 .order-servise-comment {
+  display: block;
   resize: none;
   width: 100%;
   height: 120px;
@@ -775,8 +766,7 @@ address {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.order-servise-comment:focus,
-.order-servise-comment:hover {
+.order-servise-comment:focus {
   border: 1px solid var(--accent-color);
 }
 
@@ -787,6 +777,14 @@ address {
   gap: 8px;
 
   margin-bottom: 30px;
+}
+
+.terms-contract:hover .icon-checked {
+  opacity: 1;
+}
+
+.terms-contract:hover .icon-unchecked {
+  opacity: 0;
 }
 
 .icon-checked {
